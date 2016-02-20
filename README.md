@@ -1,6 +1,8 @@
 # Head First Java
 Notes and exercises related to the book Head First Java, 2nd Edition.
 
+# Exercise Solutions
+Discussions and links to code for various exercises from the book.  
 ## Chapter 1 - A Quick Dip
 ### Page 9 - Writing a class with main  
 Typing, compiling and running of a program called [MyFirstApp](/workspace/Ch01 My First App/src/MyFirstApp.java). The output of this program will be:  
