@@ -28,3 +28,8 @@ tape playing
 tape recording
 ```
 
+The code about DVD players will not compile because an method is called that isn't defined in the class DVDPlayer. A fixed version of the code can be found [here](/workspace/Ch02 DVD Player/src/DVDPlayerTestDrive.java). The output of this program will be:  
+```
+DVD playing
+DVD recording
+```
