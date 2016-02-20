@@ -22,7 +22,7 @@ In the Loop
 Value of x is 3
 This is after the loop
 ```
-##3 Chapter 2 - Classes and Objects  
+### Chapter 2 - Classes and Objects  
 #### Page 42 - Be the Compiler
 The code about tape decks will not compile because an object, called t, is used without being created. A fixed version of the code can be found [here](/workspace/Ch02 Tape Deck/src/TapeDeckTestDrive.java). The output of this program will be:  
 ```
