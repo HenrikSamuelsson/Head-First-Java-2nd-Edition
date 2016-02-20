@@ -20,5 +20,4 @@ workspace/.recommenders/
 *.classpath
 workspace/My First App/.settings/
 *.project
-*.java
 *.prefs
