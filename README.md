@@ -76,5 +76,5 @@ calcArea();  // Both arguments are missing
 byte h = calcArea(4, 20);  // The result may not fit in an byte variable since it is of type int
 ```
 ```
-int j = calcArea(2, 3, 5);  // There is one argument to many
+int j = calcArea(2, 3, 5);  // There is one argument too many
 ```
