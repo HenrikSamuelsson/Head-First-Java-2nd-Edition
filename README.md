@@ -22,7 +22,9 @@ In the Loop
 Value of x is 3
 This is after the loop
 ```
+
 ### Chapter 2 - Classes and Objects  
+
 #### Page 42 - Be the Compiler
 The code about tape decks will not compile because an object, called t, is used without being created. A fixed version of the code can be found [here](/workspace/Ch02 Tape Deck/src/TapeDeckTestDrive.java). The output of this program will be:  
 ```
@@ -34,4 +36,45 @@ The code about DVD players will not compile because an method is called that isn
 ```
 DVD playing
 DVD recording
+```
+
+### Chapter 4 - Methods use Instance Variables
+
+#### Page 87 - Sharpen your pencil  
+Assume that the method given below.  
+```
+int calcArea(int height, int width) {
+	return height * width;
+}
+```
+Example of legal statements that use the method are then the following.  
+```
+int a = calcArea(7, 12);
+```
+```
+short c = 7;
+calcArea(c, 12);    // ok because a short will always fit in an int  
+```
+```
+calcArea(2, 3);    // it is ok to not use the return value for anyhthing
+```
+Statements that would be illegal are for example the following.  
+```
+int d = calcArea(57);  // one of the arguments are missing 
+```
+```
+long t = 42;
+int a = calcArea(t, 12);  // must cast the long to an in since t can be to big to fit in the int
+```
+```
+int g = calcArea();	 // both arguments are missing
+```
+```
+calcArea();  // both argumentsa are missing
+```
+```
+byte h = calcArea(4, 20);  // the result may not fit in an byte variable since it is of type int
+```
+```
+int j = calcArea(2, 3, 5);
 ```
