@@ -80,7 +80,7 @@ int j = calcArea(2, 3, 5);  // There is one argument too many
 ```
 
 #### Page 88 - Be the Compiler
-The [code]((/workspace/Ch04 X Copy/src/XCopy.java)) with the class called XCopy will compile. The value that is changed inside go is just a copy of the value called orig. This means that orig will remain unchanged and will hold 42, y will be set to twice the value of orig. The out put will be:  
+The [code](/workspace/Ch04 X Copy/src/XCopy.java) with the class called XCopy will compile. The value that is changed inside go is just a copy of the value called orig. This means that orig will remain unchanged and will hold 42, y will be set to twice the value of orig. The out put will be:  
 ```
 42 84  
 ```
