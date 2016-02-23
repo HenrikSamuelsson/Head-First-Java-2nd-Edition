@@ -91,7 +91,7 @@ The output when running the code will be:
 
 The original code with the class called Clock will not compile. The problem is that the getter function does not return anything according to the declaration. This function should be declared to return a String.  
 
-A fixed version of the code can be found [here](/workspace/Ch04 ClocTestDrive/src/ClockTestDrive.java).  
+A fixed version of the code can be found [here](/workspace/Ch04 Clock/src/ClockTestDrive.java).  
 
 The output when running the code will be:  
 ```
