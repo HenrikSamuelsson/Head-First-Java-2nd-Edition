@@ -89,9 +89,9 @@ The output when running the code will be:
 42 84  
 ```
 
-The original code with the class called Clock will compile not compile. The problem is that the getter function does not return anything. This function should be defined to return a String.  
+The original code with the class called Clock will not compile. The problem is that the getter function does not return anything according to the declaration. This function should be declared to return a String.  
 
-A fixed version of the code can be found [here](/workspace/Ch04 X Copy/src/ClockTestDrive.java).  
+A fixed version of the code can be found [here](/workspace/Ch04 ClocTestDrive/src/ClockTestDrive.java).  
 
 The output when running the code will be:  
 ```
