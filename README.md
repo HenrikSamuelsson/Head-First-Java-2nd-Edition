@@ -84,7 +84,16 @@ The [code](/workspace/Ch04 X Copy/src/XCopy.java) with the class called XCopy wi
 
 The value that is changed inside the method go is just a copy of the value called orig. This means that orig will remain unchanged and will hold 42, y will be set to twice the value of orig.
 
-The output will be:  
+The output when running the code will be:  
 ```
 42 84  
+```
+
+The original code with the class called Clock will compile not compile. The problem is that the getter function does not return anything. This function should be defined to return a String.  
+
+A fixed version of the code can be found [here](/workspace/Ch04 X Copy/src/ClockTestDrive.java).  
+
+The output when running the code will be:  
+```
+time: 1245  
 ```
