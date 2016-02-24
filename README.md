@@ -38,6 +38,18 @@ DVD playing
 DVD recording
 ```
 
+### Chapter 3 - Primitives and References
+
+#### Page 63 - Be the Compiler  
+The code with the Books cllas will not run as intended. It will cause a nullpointer exception att run time. An array that can hold references to Books objects is created, but no actual Books objects are then created to be put in the array.  
+
+A fixed version of the code can bee found [here](/workspace/Ch03 Books/src/BooksTestDrive.java). The output when running the code will be:  
+```
+The Grapes of Java by bob
+The Java Gatsby by sue
+The Java Cookbook by ian
+``` 
+
 ### Chapter 4 - Methods use Instance Variables
 
 #### Page 87 - Sharpen your pencil  
