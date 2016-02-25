@@ -50,7 +50,7 @@ The Java Gatsby by sue
 The Java Cookbook by ian
 ``` 
 
-The code with the Hobbits class will not run as intended. It will cause a array out of bounds exception at run time. The allowed indexes to write to for this array will be 0 to 2 but the original code will try to place a hobbit at index 3.  
+The code with the Hobbits class will not run as intended. It will cause a array out of bounds exception at run time. The allowed array indexes to use will in this case be 0 to 2 but the original code will try to place a hobbit at index 3 that does not exist. Array indexes start at 0 and is it a common mistake to forget this.  
 
 A fixed version of the code can bee found [here](/workspace/Ch03 Hobbits/src/Hobbits.java). The output when running the code will be:  
 ```
