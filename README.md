@@ -41,7 +41,7 @@ DVD recording
 ### Chapter 3 - Primitives and References
 
 #### Page 63 - Be the Compiler  
-The code with the Books clas will not run as intended. It will cause a null-pointer exception at run time. The problem is that an array that can hold references to Books objects is created, but no actual Books objects are then created to be put in the array.  
+The code with the Books class will not run as intended. It will cause a null-pointer exception at run time. The problem is that an array that can hold references to Books objects is created, but no actual Books objects are then created to be put in the array.  
 
 A fixed version of the code can bee found [here](/workspace/Ch03 Books/src/BooksTestDrive.java). The output when running the code will be:  
 ```
@@ -49,6 +49,15 @@ The Grapes of Java by bob
 The Java Gatsby by sue
 The Java Cookbook by ian
 ``` 
+
+The code with the Hobbits class will not run as intended. It will cause a array out of bounds exception at run time. The allowed indexes to write to for this array will be 0 to 2 but the original code will try to place a hobbit at index 3.  
+
+A fixed version of the code can bee found [here](/workspace/Ch03 Hobbits/src/Hobbits.java). The output when running the code will be:  
+```
+bilbo is a good Hobbit name
+frodo is a good Hobbit name
+sam is a good Hobbit name
+```
 
 ### Chapter 4 - Methods use Instance Variables
 
