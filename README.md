@@ -118,3 +118,8 @@ The output when running the code will be:
 ```
 time: 1245  
 ```
+
+### Chapter 9 - Object Construction  
+
+#### Page 252 - Sharpen your pencil  
+Example code that illustrates constructor chaining. We have a class Hippo that inherits from another class called Animal. When a new Hippo is created so will the Animal constructor be run before the Hippo constructor. This can be verified by running the this [test program](/workspace/Ch09 Test Hippo/src/TestHippo.java) that uses the classes [Hippo](/workspace/Ch09 Test Hippo/src/Hippo.java) and [Animal](/workspace/Ch09 Test Hippo/src/Animal.java).  
