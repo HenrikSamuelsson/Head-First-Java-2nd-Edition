@@ -192,4 +192,3 @@ Will compile and will cause the `GC` instance that `gc1` used to refer to be up 
 gc3 = null;
 ```
 Will compile but will not cause anything new to be up for garbage collection since `gc4` still refers instance that `gc3` used to refer to.
-```
