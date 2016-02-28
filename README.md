@@ -123,3 +123,73 @@ time: 1245
 
 #### Page 252 - Sharpen your pencil  
 Example code that illustrates constructor chaining. We have a class Hippo that inherits from another class called Animal. When a new Hippo is created so will the Animal constructor be run before the Hippo constructor. This can be verified by running the this [test program](/workspace/Ch09 Test Hippo/src/TestHippo.java) that uses the classes [Hippo](/workspace/Ch09 Test Hippo/src/Hippo.java) and [Animal](/workspace/Ch09 Test Hippo/src/Animal.java).  
+
+#### Page 266 - Be the Garbage collector
+Assume the following code:
+```Java  
+public class GC {
+	public static GC doStuff() {
+		GC newGC = new GC();
+		doStuff2(newGC);
+		return newGC;
+	}
+	
+	public static void main(String[] args) {
+		GC gc1;
+		GC gc2 = new GC();
+		GC gc3 = new GC();
+		GC gc4 = gc3;
+		gc1 = doStuff();
+		
+		// (A)
+		
+		// call more methods
+
+	}
+
+	public static void doStuff2(GC copyGC) {
+		GC localGC = copyGC;
+	}
+}
+
+```  
+
+Now assume that we have the following list of statements that are suggested to be inserted at (A) in the code above. The question is which can be inserted without compilation errors and then also which statements would cause exactly one extra object to be up for garbage collection?  
+
+```
+copyGC = null;
+```
+Will not compile because `copyGC` is out of scope when attempted to be used.  
+```
+gc2 = null;
+```
+Will compile and will cause `gc2` to be up for garbage collection.  
+```
+newGC = gc3;
+```
+Will not compile because `newGC` is out of scope when attempted to be used.  
+```
+gc1 = null
+```
+Will compile and will cause the `GC` instance that `gc1` used to refer to be up for garbage collection.  
+```
+newGC = null;  
+```
+Will not compile because `newGC` is out of scope when attempted to be used.  
+```
+gc4 = null;
+```
+Will compile but will not cause anything new to be up for garbage collection since `gc3` still refers to the same instance.  
+```
+gc3 = gc2;
+```
+Will compile but will not cause anything new to be up for garbage collection since `gc4` still refers instance that `gc3` used to refer to.
+```
+gc1 = gc4;
+```  
+Will compile and will cause the `GC` instance that `gc1` used to refer to be up for garbage collection. 
+``` 
+gc3 = null;
+```
+Will compile but will not cause anything new to be up for garbage collection since `gc4` still refers instance that `gc3` used to refer to.
+```
