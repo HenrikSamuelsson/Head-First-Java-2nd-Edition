@@ -118,6 +118,20 @@ The output when running the code will be:
 ```
 time: 1245  
 ```
+### Chapter 5 - Writing a Program  
+
+#### Page 118 - Be the JVM  
+The code in this exercise will update the variables x and y in the following seguence:  
+x y  
+- -  
+1 8  
+2 9  
+3 10  
+4 11  
+5 13 (value of y is printed)  
+6 15 (value y is printed and x = value of x is printed)  
+7 
+
 
 ### Chapter 9 - Object Construction  
 
