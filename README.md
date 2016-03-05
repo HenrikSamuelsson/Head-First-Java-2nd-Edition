@@ -121,17 +121,28 @@ time: 1245
 ### Chapter 5 - Writing a Program  
 
 #### Page 118 - Be the JVM  
-The code in this exercise will update the variables x and y in the following seguence:  
-x y  
-- -  
-1 8  
-2 9  
-3 10  
-4 11  
-5 13 (value of y is printed)  
-6 15 (value y is printed and x = value of x is printed)  
-7 
+The code in this exercise will update the variables x and y in the following seguence.
 
+y is set to 7 and x is undefined before entering the for loop.  
+
+y is increased to 8 and x is 1 in the first round of the for loop.  
+
+y is increased to 9 and x is 2 in the second round of the for loop.
+
+y is increased to 10 and x is 3 it the third round of the for loop.
+
+y is increasde to 11 and x is 4 in the fourth round of the for loop.
+
+y is first increased to 12 and x is 5 in the fifth round of the for loop. x now being larger than 4 causes y to be increased to 13 and then so is this number printed.  
+
+y is first increased to 14 and x is 6 in the sixth round of the for loop. x being larger than 4 causes y to be increased to 15 and then so is this number printed. y now being larger than 14 causes "x = " and the value of x to be printed. The following break statement  will then end the execution of the for loop out of the for loop.  
+
+To conclude so will the program when run print out:  
+```
+13 15 x = 6
+```
+
+y is first 
 
 ### Chapter 9 - Object Construction  
 
