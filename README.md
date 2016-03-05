@@ -142,8 +142,6 @@ To conclude so will the program when run print out:
 13 15 x = 6
 ```
 
-y is first 
-
 ### Chapter 9 - Object Construction  
 
 #### Page 252 - Sharpen your pencil  
